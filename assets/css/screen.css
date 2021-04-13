@@ -21,3 +21,29 @@ html {
   background: #F5F5F5;
   color: #1E1E24;
 }
+
+@supports (display: grid) {
+  html { padding: 1em 0; }
+}
+
+h1 {
+  font-size: 1.95315em; /* 39.063 / 20 */
+  line-height: 1.228784272em; /* 48 / 39.063 */
+  text-align: center;
+}
+h2 {
+  font-size: 1.5625em; /* 31.25 / 20   */
+  line-height: 1.152em; /* 36 / 31.25 */
+  font-weight: 600;
+  text-align: center;
+}
+h3 {
+  font-size: 1.25em; /* 25 / 20  */
+  font-style: italic;
+  text-align: center;
+}
+p{
+  text-align: center;
+  padding-top: 0.2em; /* 4 / 20 */
+  padding-bottom: 1em;/* 20 / 20 */
+}
