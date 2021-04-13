@@ -12,6 +12,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*
   Major Third Modular Scale:
   https://www.modularscale.com/?16&px&1.25
+
+  Color palette:
+  White used for background of pages : #F5F5F5
+  Black used for color of text : #1E1E24
+  Light blue used for unclicked/not on current page for nav bar : #4A83BF
+  Darker blue used for clicked/on current page for nav bar : #356497
 */
 
 html {
@@ -71,4 +77,24 @@ nav,
 main,
 footer {
   grid-column: 2 / 3;
+}
+
+/* Modular */
+
+.nav li {
+  padding-bottom: 0.3em; /* 6 / 20 */
+}
+.nav a{
+  text-align: center;
+  display: block;
+  background: #4A83BF;
+  color: #F5F5F5;
+  padding: 0.3em; /* 6 / 20 */
+}
+.nav a.currentlink{
+  color: #F5F5F5;
+  background-color: #356497;
+}
+.nav a:hover {
+  background: #2d8ceb;
 }
