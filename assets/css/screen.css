@@ -115,4 +115,24 @@ footer {
     padding-bottom: 1em;
     }
 
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav li {
+    padding: 0; /*0*/
+    width: 30vw;
+    margin: 0.2em; /* 4 / 20 */
+    flex: 1 auto;
+  }
+  .nav a {
+    padding: 0.4em; /* 8 / 20*/
+  }
+  .nav li:first-of-type {
+    margin-left: 0;
+  }
+  .nav li:last-of-type {
+    margin-right: 0;
+  }
 }
