@@ -59,3 +59,16 @@ li {
 footer {
   font-size: 0.8em; /* 16 / 20 */
 }
+
+/* --- Layout --- */
+
+body {
+  display: grid;
+  grid-template-columns: minmax(0.625em,1fr) minmax(5ch,80ch) minmax(0.625em,1fr);
+}
+header,
+nav,
+main,
+footer {
+  grid-column: 2 / 3;
+}
