@@ -104,6 +104,15 @@ footer {
   color: #F5F5F5;
   background-color: #356497;
 }
-.nav a:hover {
-  background: #2d8ceb;
+
+/* ---State--- */
+
+@media screen and (min-width: 50em) { /* 800 / 16 */
+
+  header {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1em;
+    }
+
 }
