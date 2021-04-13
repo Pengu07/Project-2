@@ -47,3 +47,15 @@ p{
   padding-top: 0.2em; /* 4 / 20 */
   padding-bottom: 1em;/* 20 / 20 */
 }
+
+ul.questions {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 1.2em; /* 24 / 20*/
+}
+li {
+  margin: 0.2em; /* 4 / 20*/
+}
+footer {
+  font-size: 0.8em; /* 16 / 20 */
+}
