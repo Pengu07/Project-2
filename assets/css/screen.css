@@ -33,13 +33,12 @@ html {
 }
 
 h1 {
-  font-size: 1.95315em; /* 39.063 / 20 */
-  line-height: 1.228784272em; /* 48 / 39.063 */
+  font-size: 1.5625em; /* 31.25 / 20   */
+  line-height: 1.152em; /* 36 / 31.25 */
   text-align: center;
 }
 h2 {
-  font-size: 1.5625em; /* 31.25 / 20   */
-  line-height: 1.152em; /* 36 / 31.25 */
+  font-size: 1.25em; /* 25 / 20   */
   font-weight: 600;
   text-align: center;
 }
@@ -72,7 +71,7 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 /* --- Layout --- */
