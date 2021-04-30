@@ -21,7 +21,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   White used for background of pages : #F5F5F5
   Black used for color of text : #1E1E24
   Light blue used for unclicked/not on current page for nav bar : #4A83BF
-  Darker blue used for clicked/on current page for nav bar : #356497
+  Darker blue used for clicked/on current page for nav bar : #115296
 */
 
 html {
@@ -166,7 +166,7 @@ input[type='submit']{
 }
 .nav a.currentlink{
   color: #F5F5F5;
-  background-color: #356497;
+  background-color: #115296;
 }
 
 /* ---State--- */
