@@ -121,13 +121,11 @@ footer {
   margin-bottom: 0.25em;
   text-align: center;
   margin-top: 0.5em;
-  
 }
 
 input[type='text'], [type='email']{
   width: 50%;
   height: 1em;
-  
 }
 
 input[type='submit']{
@@ -137,7 +135,6 @@ input[type='submit']{
   display: block;
   padding: 0.5em;
   border-radius: 1em;
-  
 }
 
 
@@ -152,6 +149,7 @@ input[type='submit']{
   background: #4A83BF;
   color: #F5F5F5;
   padding: 0.3em; /* 6 / 20 */
+  text-decoration: none;
 }
 .nav a.currentlink{
   color: #F5F5F5;
@@ -189,4 +187,3 @@ input[type='submit']{
     margin-right: 0;
   }
 }
-
