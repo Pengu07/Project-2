@@ -167,6 +167,19 @@ input[type='submit']{
 
 /* ---State--- */
 
+@media screen and (min-width: 31.25em) { /* 500 / 16 */
+
+  h1 {
+    font-size: 1.95315em; /* 39.063 / 20 */
+    line-height: 1.228784272em; /* 48 / 39.063 */
+  }
+  h2 {
+    font-size: 1.5625em; /* 31.25 / 20   */
+    line-height: 1.152em; /* 36 / 31.25 */
+  }
+
+}
+
 @media screen and (min-width: 50em) { /* 800 / 16 */
 
   header {
