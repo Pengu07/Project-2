@@ -54,6 +54,8 @@ p{
   padding-bottom: 1em;/* 20 / 20 */
 }
 
+
+
 ul.questions {
   list-style-type: disc;
   list-style-position: inside;
@@ -87,6 +89,57 @@ main,
 footer {
   grid-column: 2 / 3;
 }
+
+.form_center{
+  align-items: center;
+  position: relative;
+  border-radius: 2em;
+  background-color: #4A83BF;
+  padding: 2em;
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+
+}
+
+.center{
+  text-align: center;
+  font-size: 1em;
+  margin: auto;
+  width: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left:  auto;
+}
+
+.container{
+  width: 98%;
+  padding: 1em;
+}
+
+.input{
+  margin-bottom: 0.25em;
+  text-align: center;
+  margin-top: 0.5em;
+  
+}
+
+input[type='text'], [type='email']{
+  width: 50%;
+  height: 1em;
+  
+}
+
+input[type='submit']{
+  background: #21b2eb;
+  color: white;
+  margin: 1em auto;
+  display: block;
+  padding: 0.5em;
+  border-radius: 1em;
+  
+}
+
 
 /* Modular */
 
@@ -136,3 +189,4 @@ footer {
     margin-right: 0;
   }
 }
+
