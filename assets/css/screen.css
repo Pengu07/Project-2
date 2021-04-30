@@ -11,17 +11,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*
   Major Third Modular Scale:
-  https://www.modularscale.com/?16&px&1.25
+  https://www.modularscale.com/?20&px&1.25
 
   Color palette:
+
+  Colors grabbed from Palletton
+  Palletton link : https://paletton.com/#uid=13K0u0krnIRgyQDmcMjBmFNDIrf
+
   White used for background of pages : #F5F5F5
   Black used for color of text : #1E1E24
   Light blue used for unclicked/not on current page for nav bar : #4A83BF
-  Darker blue used for clicked/on current page for nav bar : #356497
+  Darker blue used for clicked/on current page for nav bar : #115296
 */
 
 html {
-  font-family: Literata, Georgia, "Times New Roman", Times, Roman, serif;
+  font-family: Literata, "Times New Roman", Arial; /* Imported Font Literata */
   font-size: 1.25em; /* 20 / 16 = 1.25 */
   line-height: 1.3em; /* 26 / 20 = 1.3*/
   background: #F5F5F5;
@@ -33,13 +37,12 @@ html {
 }
 
 h1 {
-  font-size: 1.95315em; /* 39.063 / 20 */
-  line-height: 1.228784272em; /* 48 / 39.063 */
+  font-size: 1.5625em; /* 31.25 / 20   */
+  line-height: 1.152em; /* 36 / 31.25 */
   text-align: center;
 }
 h2 {
-  font-size: 1.5625em; /* 31.25 / 20   */
-  line-height: 1.152em; /* 36 / 31.25 */
+  font-size: 1.25em; /* 25 / 20   */
   font-weight: 600;
   text-align: center;
 }
@@ -53,8 +56,6 @@ p{
   padding-top: 0.2em; /* 4 / 20 */
   padding-bottom: 1em;/* 20 / 20 */
 }
-
-
 
 ul.questions {
   list-style-type: disc;
@@ -74,7 +75,7 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 /* --- Layout --- */
@@ -99,13 +100,12 @@ footer {
   width: 50%;
   margin: auto;
   margin-top: 10%;
-
 }
 
 .center{
   text-align: center;
   font-size: 1em;
-  margin: 0px auto;
+  margin: auto;
   width: 50%;
   position: relative;
   margin-right: auto;
@@ -121,13 +121,11 @@ footer {
   margin-bottom: 0.25em;
   text-align: center;
   margin-top: 0.5em;
-  
 }
 
 input[type='text'], [type='email']{
   width: 50%;
   height: 1em;
-  
 }
 
 input[type='submit']{
@@ -137,14 +135,20 @@ input[type='submit']{
   display: block;
   padding: 0.5em;
   border-radius: 1em;
-  
 }
-
 
 /* Modular */
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .nav li {
-  padding-bottom: 0.3em; /* 6 / 20 */
+  padding: 0em; /*0*/
+  width: 30vw;
+  margin: 0.2em; /* 4 / 20 */
+  flex: 1 auto;
 }
 .nav a{
   text-align: center;
@@ -152,13 +156,33 @@ input[type='submit']{
   background: #4A83BF;
   color: #F5F5F5;
   padding: 0.3em; /* 6 / 20 */
+  text-decoration: none;
+}
+.nav li:first-of-type {
+  margin-left: 0;
+}
+.nav li:last-of-type {
+  margin-right: 0;
 }
 .nav a.currentlink{
   color: #F5F5F5;
-  background-color: #356497;
+  background-color: #115296;
 }
 
 /* ---State--- */
+
+@media screen and (min-width: 31.25em) { /* 500 / 16 */
+
+  h1 {
+    font-size: 1.95315em; /* 39.063 / 20 */
+    line-height: 1.228784272em; /* 48 / 39.063 */
+  }
+  h2 {
+    font-size: 1.5625em; /* 31.25 / 20   */
+    line-height: 1.152em; /* 36 / 31.25 */
+  }
+
+}
 
 @media screen and (min-width: 50em) { /* 800 / 16 */
 
@@ -188,100 +212,11 @@ input[type='submit']{
   .nav li:last-of-type {
     margin-right: 0;
   }
-}
 
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-max-width: 1000px;
-position: relative;
-margin: 0px auto;
-text-align: 0;
-}
-
-/* Hide the images by default */
-.mySlides {
-display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: -22px;
-padding: 16px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-color: #f2f2f2;
-font-size: 15px;
-padding: 8px 12px;
-position: absolute;
-bottom: 8px;
-width: 100%;
-text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-color: #f2f2f2;
-font-size: 12px;
-padding: 8px 12px;
-position: absolute;
-top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
--webkit-animation-name: fade;
--webkit-animation-duration: 1.5s;
-animation-name: fade;
-animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
-}
-
-@keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
 }
