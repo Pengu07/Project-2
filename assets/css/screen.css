@@ -82,7 +82,15 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 50%;
+  max-width: 50%; /*Adjusts size of logo */
+}
+
+img.landscape{
+  max-width: 100%;
+}
+
+img.portrait{
+  max-width: 12em; /* 240 / 20 */
 }
 
 /* --- Layout --- */
@@ -220,12 +228,6 @@ input[type='submit']{
     margin-right: 0;
   }
 
-  img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-  }
 }
 
 
