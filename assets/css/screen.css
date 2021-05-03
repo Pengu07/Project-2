@@ -57,6 +57,13 @@ p{
   padding-bottom: 1em;/* 20 / 20 */
 }
 
+figcaption {
+  font-size: 0.9em; /* 18 / 20 */
+  line-height: 1.22em; /* 22 / 18 */
+  text-align: center;
+  padding-bottom: 0.8em;
+}
+
 ul.questions {
   list-style-type: disc;
   list-style-position: inside;
