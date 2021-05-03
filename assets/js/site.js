@@ -33,9 +33,19 @@ if (document.contact_form.subject.value == "" ){
 if (document.contact_form.mes.value == "" ){
 	alert( "Please type your message." );
 	document.contactform.mes.focus() ;
-document.getElementbyID("submit").disabled = true;
+	document.getElementbyID("submit").disabled = true;
 }
 
 else{
 document.getElementbyID("submit").disabled = false;}
+}
+
+const submit = document.getElementById('submit');
+
+form.onsubmit = submit;
+
+function submit(event) {
+	submit.removeAttribute('hidden');
+	
+	event.preventDefault();
 }
