@@ -61,6 +61,7 @@ figcaption {
   font-size: 0.9em; /* 18 / 20 */
   line-height: 1.22em; /* 22 / 18 */
   text-align: center;
+  padding-top: 0.2em;
   padding-bottom: 0.8em;
 }
 
