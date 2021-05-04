@@ -9,17 +9,17 @@ function showSlides() {
 slides[i].style.display = "none";
 }
 slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
+  if (slideIndex > slides.length) {slideIndex = 1;}
 slides[slideIndex-1].style.display = "block";
 setTimeout(showSlides, 6000);
 }
 
 function validateForm() {
-var a = document.forms["contact_form"]["name"].value;
-var b = document.forms["contact_form"]["email"].value;
-var c = document.forms["contact_form"]["subject"].value;
-var d = document.forms["contact_form"]["mes"].value;
-var button = document.getElementById('submit');
+  var a = document.forms.contact_form.name.value;
+  var b = document.forms.contact_form.email.value;
+  var c = document.forms.contact_form.subject.value;
+  var d = document.forms.contact_form.mes.value;
+  var button = document.getElementById('submit');
 
   if ((a == "") || (a == null) || (b == "") || (b == null) || (c == "") || (c == null) || (d == "") || (d == null)){
 		button.disabled = true;
