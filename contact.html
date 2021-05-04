@@ -28,35 +28,42 @@
       </ul>
     </nav>
 
-
     <main>
-      <div class="center">
-      </div>
-      <div class="center">
-      </div>
-
       <div>
-      <h2>Thank you for your interest in ISUD </h2>
-      <p> To contact us please reach us via:</p>
-      <form name="contact_form" method="GET" id="contact_form" action="#null" onsubmit="return validateForm()">
-        <div class="form_center">
-          <ol>
-            <li class="input">
-              <input type="text" name="name" placeholder="Name*" onkeyup="validateForm()">
-            </li>
-            <li class="input">
-              <input type="email" name="email" placeholder="Email*" onkeyup="validateForm()">
-            </li>
-            <li class="input">
-              <input type="text" name="subject" placeholder="Subject*" onkeyup="validateForm()">
-            </li>
-            <li class="input">
-              <textarea class="mes" name="mes" placeholder="Message*" onkeyup="validateForm()"></textarea>
-            </li>
-          </ol>
-          <input id='submit' type="submit" disabled/>
-        </div>
-      </form>
+        <h2>Thank you for your interest in ISUD </h2>
+        <p> To contact us please reach us via:</p>
+        <form name="contact_form" method="GET" id="contact_form" action="#null"
+        onsubmit="return validateForm()">
+          <fieldset>
+            <div class="form_center">
+              <ol>
+                <li class="input">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" placeholder="Example Name" onkeyup="validateForm()"
+                  required>
+                </li>
+                <li class="input">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" pattern="^.+@.+$"
+                  placeholder="Example@example.com" onkeyup="validateForm()"required>
+                </li>
+                <li class="input">
+                  <label for="subject">Subject:</label>
+                  <input type="text" name="subject" placeholder="Enter Subject"
+                  onkeyup="validateForm()"required>
+                </li>
+                <li class="input">
+                  <label for="mes">Message:</label>
+                  <textarea class="mes" name="mes" placeholder="Enter message here!"
+                  onkeyup="validateForm()"required></textarea>
+                </li>
+                <li class ="submit">
+                  <input id="submit" type="submit" value="Contact us!" disabled/>
+                </li>
+              </ol>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
 

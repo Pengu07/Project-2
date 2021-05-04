@@ -21,7 +21,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   White used for background of pages : #F5F5F5
   Black used for color of text : #1E1E24
   Light blue used for unclicked/not on current page for nav bar : #4A83BF
-  Darker blue used for clicked/on current page for nav bar : #115296
+  Darker blue used for clicked/on current page for nav bar and other various parts : #115296
+  Background color used for form : #527DD8
 */
 
 html {
@@ -108,50 +109,44 @@ footer {
   grid-column: 2 / 3;
 }
 
-.form_center{
-  align-items: center;
-  position: relative;
-  border-radius: 2em;
-  background-color: #4A83BF;
-  padding: 2em;
-  width: 50%;
-  margin: auto;
-  margin-top: 10%;
-}
-
-.center{
-  text-align: center;
-  font-size: 1em;
-  margin: auto;
-  width: 50%;
-  position: relative;
-  margin-right: auto;
-  margin-left:  auto;
-}
-
-.container{
-  width: 98%;
-  padding: 1em;
-}
-
-.input{
-  margin-bottom: 0.25em;
-  text-align: center;
-  margin-top: 0.5em;
-}
-
-input[type='text'], [type='email']{
-  width: 50%;
-  height: 1em;
-}
-
-input[type='submit']{
-  background: #21b2eb;
-  color: white;
-  margin: 1em auto;
+label {
   display: block;
-  padding: 0.5em;
-  border-radius: 1em;
+}
+
+fieldset{
+  border: 0.15em solid#115296;
+  background-color: #527DD8;
+  max-width: 100%;
+}
+
+li {
+  text-align: center;
+  margin: 0.5em; /* 4 / 20*/
+  margin-bottom: 0.8em;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+  border: 0; /* Removes the border coming from the resets file */
+  padding: 0.4em 0.6em;/* 8 / 20 | 12 / 20 */
+  border-radius: 0.2em;/* 4 / 20 */
+}
+
+#submit{
+  padding-top: 0.6em;/* 12 / 20 */
+}
+
+input[type=submit]{
+  padding: 0.4em 1em;/* 8 / 20 | 20 / 20 */
+  text-align: center;
+}
+
+label[for=name],
+label[for=email],
+label[for=subject],
+label[for=mes]{
+  padding-bottom: 0.6em;/* 12 / 20 */
 }
 
 /* Modular */
