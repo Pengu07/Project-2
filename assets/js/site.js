@@ -15,27 +15,16 @@ setTimeout(showSlides, 6000);
 }
 
 function validateForm() {
-if (document.contact_form.name.value == "" ){
-	alert( "Please type your name." );
-	document.contactform.name.focus() ;
-	document.getElementbyID("submit").disabled = true;
-}
-if (document.contact_form.email.value == "" ){
-	alert( "Please type your E-Mail." );
-	document.contactform.email.focus() ;
-	document.getElementbyID("submit").disabled = true;
-}
-if (document.contact_form.subject.value == "" ){
-	alert( "Please type your subject." );
-	document.contactform.subject.focus() ;
-	document.getElementbyID("submit").disabled = true;
-}
-if (document.contact_form.mes.value == "" ){
-	alert( "Please type your message." );
-	document.contactform.mes.focus() ;
-document.getElementbyID("submit").disabled = true;
-}
+var a = document.forms["contact_form"]["name"].value;
+var b = document.forms["contact_form"]["email"].value;
+var c = document.forms["contact_form"]["subject"].value;
+var d = document.forms["contact_form"]["mes"].value;
+var button = document.getElementById('submit');
 
-else{
-document.getElementbyID("submit").disabled = false;}
+  if ((a == "") || (a == null) || (b == "") || (b == null) || (c == "") || (c == null) || (d == "") || (d == null)){
+		button.disabled = true;
+  }
+  else{
+		button.disabled = false;
+  }
 }

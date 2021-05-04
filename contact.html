@@ -38,23 +38,23 @@
       <div>
       <h2>Thank you for your interest in ISUD </h2>
       <p> To contact us please reach us via:</p>
-      <form name="contact_form" method="GET" id="contact_form" action="#null" autocomplete="on">
+      <form name="contact_form" method="GET" id="contact_form" action="#null" onsubmit="return validateForm()">
         <div class="form_center">
           <ol>
             <li class="input">
-              <input type="text" name="name" placeholder="Name*">
+              <input type="text" name="name" placeholder="Name*" onkeyup="validateForm()">
             </li>
             <li class="input">
-              <input type="email" name="email" placeholder="Email*">
+              <input type="email" name="email" placeholder="Email*" onkeyup="validateForm()">
             </li>
             <li class="input">
-              <input type="text" name="subject" placeholder="Subject*">
+              <input type="text" name="subject" placeholder="Subject*" onkeyup="validateForm()">
             </li>
             <li class="input">
-              <textarea class="mes" name="mes" placeholder="Message*"></textarea>
+              <textarea class="mes" name="mes" placeholder="Message*" onkeyup="validateForm()"></textarea>
             </li>
           </ol>
-          <input id='submit' type="submit">
+          <input id='submit' type="submit" disabled/>
         </div>
       </form>
       </div>
