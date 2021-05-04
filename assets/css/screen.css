@@ -186,6 +186,56 @@ input[type='submit']{
   background-color: #115296;
 }
 
+/* Slideshow CSS */
+* {box-sizing:border-box}
+
+img.slideimg{
+  max-width: 100%;
+}
+
+.slidetext {
+  color: #f2f2f2;
+  font-size: 0.8em;
+  padding: 0.5em 0em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #115296;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 0.8em;
+  padding: 0.4em 0.6em;
+  position: absolute;
+  top: 0;
+  background-color: #115296;
+}
+
+.slides {
+  width: 100%;
+  position: relative;
+  margin: 0em auto;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
 /* ---State--- */
 
 @media screen and (min-width: 31.25em) { /* 500 / 16 */
@@ -246,56 +296,10 @@ input[type='submit']{
   .nav li:last-of-type {
     margin-right: 0;
   }
-
-}
-
-
-.slideshow-container {
-max-width: 1000px;
-position: relative;
-margin: 0px auto;
-text-align: 0;
-}
-
-
-.slidetext {
-color: #f2f2f2;
-font-size: 15px;
-padding: 10px 0px;
-position: absolute;
-bottom: 10px;
-width: 100%;
-background-color: black;
-text-align: center;
-}
-
-.numbertext {
-color: #f2f2f2;
-font-size: 12px;
-padding: 8px 12px;
-position: absolute;
-top: 0;
-background-color: black;
-}
-
-.Slides {
-width: 100%;
-position: relative;
-margin: 0px auto;
-
-.fade {
--webkit-animation-name: fade;
--webkit-animation-duration: 2.5s;
-animation-name: fade;
-animation-duration: 2.5s;
-}
-
-@-webkit-keyframes fade {
-from {opacity: .2}
-to {opacity: 1}
-}
-
-@keyframes fade {
-from {opacity: .2}
-to {opacity: 1}
+  .slidetext {
+    font-size: 1em;
+  }
+  .numbertext {
+    font-size: 1em;
+  }
 }
