@@ -39,25 +39,25 @@
               <ol>
                 <li class="input">
                   <label for="name">Name:</label>
-                  <input type="text" name="name" placeholder="Example Name" onkeyup="validateForm()"
-                  required>
+                  <input type="text" name="name" id="name"
+                  placeholder="Example Name" onkeyup="validateForm()" required>
                 </li>
                 <li class="input">
                   <label for="email">Email:</label>
                   <input type="email" name="email" id="email" pattern="^.+@.+$"
-                  placeholder="Example@example.com" onkeyup="validateForm()"required>
+                  placeholder="Example@example.com" onkeyup="validateForm()" required>
                 </li>
                 <li class="input">
                   <label for="subject">Subject:</label>
-                  <input type="text" name="subject" placeholder="Enter Subject"
-                  onkeyup="validateForm()"required>
+                  <input type="text" name="subject" id="subject" placeholder="Enter Subject"
+                  onkeyup="validateForm()" required>
                 </li>
                 <li class="input">
                   <label for="mes">Message:</label>
-                  <textarea class="mes" name="mes" placeholder="Enter message here!"
-                  onkeyup="validateForm()"required></textarea>
+                  <textarea class="mes" name="mes" id="mes" placeholder="Enter message here!"
+                  onkeyup="validateForm()" required></textarea>
                 </li>
-                <li class ="submit">
+                <li class="input">
                   <input id="submit" type="submit" value="Contact us!" disabled/>
                 </li>
               </ol>
